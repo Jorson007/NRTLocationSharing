@@ -81,10 +81,10 @@
 
 -(void)__loadConfiguation{
     NSString *deviceID = [UIDevice currentDevice].identifierForVendor.UUIDString;
-    NSString *appId = @"pjpqg0";
+    NSString *appId = @"******";
     NSString *clientId = [NSString stringWithFormat:@"%@@%@",deviceID,appId];
-    self.rootTopic = @"root";
-    NSString *password = @"123456";
+    self.rootTopic = @"******";
+    NSString *password = @"******";
     BOOL  isSSL = FALSE;
     if(!self.manager){
         self.manager = [[MQTTSessionManager alloc] init];
